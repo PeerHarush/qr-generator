@@ -2,6 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import qr from "qr-image";
 import fs from "fs";
+import cors from "cors";
 
 const app = express();
 const port = 3001;
@@ -13,6 +14,11 @@ app.post("/generate", (req, res) => {
   if (!url) {
     return res.status(400).send("Missing URL");
   }
+  app.use(cors({
+  origin: ["http://localhost:3000", "https://qr-generator-theta-virid.vercel.app/"],
+  methods: ["POST"],
+  allowedHeaders: ["Content-Type"]
+}));
 
   // יצירת QR
   const qrImage = qr.image(url, { type: "png" });
