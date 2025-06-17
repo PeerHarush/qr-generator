@@ -7,7 +7,7 @@ import cors from "cors";
 const app = express();
 const port = process.env.PORT || 3001;
   app.use(cors({
-  origin: ["http://localhost:3000", "https://qr-generator-theta-virid.vercel.app/"],
+  origin: ["http://localhost:3000", "https://qr-generator-theta-virid.vercel.app"],
   methods: ["POST"],
   allowedHeaders: ["Content-Type"]
 }));
