@@ -51,10 +51,11 @@ const generateQR = async (e) => {
 
   return (
     <div className="container">
-     <h1>Hello!</h1>
-      <h5> just put the url link, hit the Generate button and save the image</h5>
-      <img src="/icon.jpg" alt="logo" style={{ width: "70px" }} />
+       <img src="/icon.jpg" alt="logo" style={{ width: "70px" }} />
       <h1>QR Code Generator</h1>
+      <h3> Simply paste your URL, hit the "Generate" button, and save the QR code image.</h3>
+     
+     
       <form onSubmit={generateQR}>
         <input
           type="text"
