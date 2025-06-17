@@ -15,6 +15,9 @@ This project includes:
 Frontend: https://qr-generator-theta-virid.vercel.app/
 Backend (API): https://qr-generator-7d0h.onrender.com
 
+
+![qr-code (1)](https://github.com/user-attachments/assets/78db007c-fe84-4afb-b8a8-3835ee997743)
+
 ## 🧪 Features
 
 - Generate QR code from any valid URL
